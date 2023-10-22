@@ -90,6 +90,17 @@ extra-dependencies = [
 If your project defines [optional dependencies](../metadata.md#optional), you can select which groups to install using the `features` option:
 
 ```toml config-example
+[project.optional-dependencies]
+test = [
+  "...",
+]
+server = [
+  "...",
+]
+grpc = [
+  "...",
+]
+
 [tool.hatch.envs.nightly]
 features = [
   "server",
